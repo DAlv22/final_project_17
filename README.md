@@ -22,6 +22,7 @@ El modelo resultante deberá poder cubrir un valor AUC-ROC mayor o igual a 0.88 
 1.- Crear ambiente virual con `python3 -m venv .venv`
 2.- Activar el ambiente virtual. `. venv/bin/activate` o su equivalente en tu terminal. Por ejemplo, `source .venv/Scripts/activate` en Git Bash.
 3.- Instalar librerías con `pip install -r requirements.txt`
+<!-- TODO No tienes tu archivo requirements.txt commiteado. Si fue ignorado, puedes forzar un add incluso a archivos con extensiones ignoradas con `git add -f ruta_al_archivo` -->
 4.- Ejecutar python3 main.py
 <!-- TODO No veo el archivo `main.py` -->
 
