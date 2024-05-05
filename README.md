@@ -19,8 +19,9 @@ La compañia busca poder pronosticar si un cliente potencialmente podría cancel
 El modelo resultante deberá poder cubrir un valor AUC-ROC mayor o igual a 0.88 en el conjunto de prueba
 
 ## Instrucciones de uso
-1.- Crear ambiente virual con python3 -m venv .venv
-2.- Activar el ambiente virtual. . venv/bin/activate
-3.- Instalar librerías con pip install -r requirements.txt
+1.- Crear ambiente virual con `python3 -m venv .venv`
+2.- Activar el ambiente virtual. `. venv/bin/activate` o su equivalente en tu terminal. Por ejemplo, `source .venv/Scripts/activate` en Git Bash.
+3.- Instalar librerías con `pip install -r requirements.txt`
 4.- Ejecutar python3 main.py
+
 
