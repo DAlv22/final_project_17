@@ -23,7 +23,6 @@ files
 *.Rds
 *.code-workspace
 *.pmml
-.vscode
 *.jar
 
 # R
@@ -310,4 +309,3 @@ geckodriver.log
 # ms IDE stuff
 *.code-workspace
 .history
-.vscode
