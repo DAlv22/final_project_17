@@ -4,7 +4,7 @@
 
 **NOTA**: Una vez empezado el proyecto borrar la sección de info y completar la descripción.
 
-+ En esta carpeta deben estar los scripts para crear el tablón para modelar.
++ En esta carpeta se realiza el escrutineo de los datasets
 + En este READM.md se deberá incluir una breve descripción de cada scripts
 + Cada script debe empezar con una letra que represente a una familia de reporte
     * p00_prepro.R 

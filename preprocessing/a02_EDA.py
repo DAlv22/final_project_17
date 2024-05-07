@@ -1,3 +1,7 @@
+# Librerias ------------------------------------------- 
+import pandas as pd
+
+
 # Information analysis
 
 def unique_values(dataframe):
