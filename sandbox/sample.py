@@ -1,9 +1,3 @@
-# Librerias ------------------------------------------- 
-import pandas as pd
-
-
-# Information analysis
-
 def unique_values(dataframe):
     for column in dataframe.columns:
         unique_values = dataframe[column].unique()
@@ -49,3 +43,15 @@ def analyze_all_datasets(contract_data, personal_data, internet_data, phone_data
     analyze_dataset(personal_data, "personal")
     analyze_dataset(internet_data, "internet")
     analyze_dataset(phone_data, "phone")
+
+
+
+
+    # access each datase
+if __name__ == "__main__":
+    folder_path = 'files/datasets/input/'
+    data = load_data(folder_path)
+    contract_data = data['contract']
+    personal_data = data['personal']
+    internet_data = data['internet']
+    phone_data = data['phone']

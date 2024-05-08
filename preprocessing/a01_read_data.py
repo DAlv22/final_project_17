@@ -2,24 +2,24 @@
 
 import pandas as pd
 import numpy as np
-import re 
 
 # Loading data ---------------------------------------- 
 
 def load_data(folder_path):
     datasets = {}
-    datasets['contract'] = pd.read_csv(folder_path + 'contract.csv', parse_dates=['EndDate'])
-    datasets['personal'] = pd.read_csv(folder_path + 'personal.csv')
-    datasets['internet'] = pd.read_csv(folder_path + 'internet.csv')
-    datasets['phone'] = pd.read_csv(folder_path + 'phone.csv')
+    datasets_name = ['contract', 'personal', 'internet', 'phone']
+    for item in datasets_name:
+        datasets[item] = pd.read_csv(folder_path + item + '.csv')
     return datasets
 
 
-# access each datase
-if __name__ == "__main__":
-    folder_path = 'files/datasets/input/'
-    data = load_data(folder_path)
-    contract_data = data['contract']
-    personal_data = data['personal']
-    internet_data = data['internet']
-    phone_data = data['phone']
+# Data merge ---------------------------------------------
+
+def merge_dataframes(datasets):
+    """
+    merge de varios DataFrames de manera iterativa.
+    """
+    merged_df = datasets[0]
+    for df in datasets[1:]:
+        merged_df = merged_df.merge(df, how='left', on='customerID')
+    return merged_df
